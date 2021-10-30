@@ -6,11 +6,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mapr.ang</groupId>
-    <artifactId>angapp</artifactId>
+    <artifactId>mgrweb</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Angapp</name>
-    <description>Description for angapp</description>
+    <name>mgrweb</name>
+    <description>Description for mgrweb</description>
 
     <repositories>
         <!-- jhipster-needle-maven-repository -->
@@ -25,7 +25,7 @@
     <properties>
         <!-- Build properties -->
         <maven.version>3.3.9</maven.version>
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <node.version>v14.17.6</node.version>
         <npm.version>8.1.0</npm.version>
 
@@ -34,7 +34,7 @@
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <start-class>com.mapr.ang.AngappApp</start-class>
+        <start-class>com.mapr.mgrweb.MgrwebApp</start-class>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx256m</argLine>
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <run.addResources>false</run.addResources>
@@ -607,7 +607,7 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>angapp:latest</image>
+                            <image>mgrweb:latest</image>
                         </to>
                         <container>
                             <entrypoint>
@@ -644,11 +644,11 @@
                         <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
                         <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                         <driver>org.h2.Driver</driver>
-                        <url>jdbc:h2:file:${project.build.directory}/h2db/db/angapp</url>
+                        <url>jdbc:h2:file:${project.build.directory}/h2db/db/mgrweb</url>
                         <defaultSchemaName></defaultSchemaName>
-                        <username>angapp</username>
+                        <username>mgrweb</username>
                         <password></password>
-                        <referenceUrl>hibernate:spring:com.mapr.ang.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
+                        <referenceUrl>hibernate:spring:com.mapr.mgrweb.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                         <verbose>true</verbose>
                         <logging>debug</logging>
                         <contexts>!test</contexts>
@@ -735,7 +735,7 @@
                             </requireMavenVersion>
                             <requireJavaVersion>
                                 <message>You are running an incompatible version of Java. JHipster supports JDK 17 to 11.</message>
-                                <version>[17,18),[16,17),[15,16),[14,15),[13,14),[12,13),[11,12)</version>
+                                <version>${java.version}</version>
                             </requireJavaVersion>
                         </rules>
                     </configuration>

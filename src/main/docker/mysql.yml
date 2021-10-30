@@ -1,13 +1,13 @@
 # This configuration is intended for development purpose, it's **your** responsibility to harden it for production
 version: '3.8'
 services:
-  angapp-mysql:
+  mgrweb-mysql:
     image: mysql:8.0.26
     # volumes:
-    #   - ~/volumes/jhipster/angapp/mysql/:/var/lib/mysql/
+    #   - ~/volumes/jhipster/mgrweb/mysql/:/var/lib/mysql/
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-      - MYSQL_DATABASE=angapp
+      - MYSQL_DATABASE=mgrweb
     # If you want to expose these ports outside your dev PC,
     # remove the "127.0.0.1:" prefix
     ports:

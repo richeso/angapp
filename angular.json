@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angapp": {
+    "mgrweb": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -84,15 +84,15 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "angapp:build:development",
+            "browserTarget": "mgrweb:build:development",
             "port": 4200
           },
           "configurations": {
             "production": {
-              "browserTarget": "angapp:build:production"
+              "browserTarget": "mgrweb:build:production"
             },
             "development": {
-              "browserTarget": "angapp:build:development"
+              "browserTarget": "mgrweb:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,7 +106,7 @@
       }
     }
   },
-  "defaultProject": "angapp",
+  "defaultProject": "mgrweb",
   "cli": {
     "packageManager": "npm"
   }

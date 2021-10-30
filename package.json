@@ -1,8 +1,8 @@
 {
-  "name": "angapp",
+  "name": "mgrweb",
   "version": "0.0.1-SNAPSHOT",
   "private": true,
-  "description": "Description for angapp",
+  "description": "Description for mgrweb",
   "license": "UNLICENSED",
   "scripts": {
     "app:start": "./mvnw",

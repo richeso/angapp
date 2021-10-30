@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="codeValues">
+      <h2 data-cy="codeValuesDetailsHeading"><span jhiTranslate="mgrwebApp.codeValues.detail.title">Code Values</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ codeValues.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="mgrwebApp.codeValues.key">Key</span></dt>
+        <dd>
+          <span>{{ codeValues.key }}</span>
+        </dd>
+        <dt><span jhiTranslate="mgrwebApp.codeValues.value">Value</span></dt>
+        <dd>
+          <span>{{ codeValues.value }}</span>
+        </dd>
+        <dt><span jhiTranslate="mgrwebApp.codeValues.codeTables">Code Tables</span></dt>
+        <dd>
+          <div *ngIf="codeValues.codeTables">
+            <a [routerLink]="['/code-tables', codeValues.codeTables?.id, 'view']">{{ codeValues.codeTables?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/code-values', codeValues.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

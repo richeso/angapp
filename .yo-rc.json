@@ -1,7 +1,7 @@
 {
   "generator-jhipster": {
     "applicationType": "monolith",
-    "baseName": "angapp",
+    "baseName": "mgrweb",
     "jhipsterVersion": "7.3.1",
     "skipClient": false,
     "skipServer": false,
@@ -19,7 +19,7 @@
     "serviceDiscoveryType": "no",
     "reactive": false,
     "authenticationType": "jwt",
-    "packageName": "com.mapr.ang",
+    "packageName": "com.mapr.mgrweb",
     "serverPort": "8080",
     "cacheProvider": "ehcache",
     "enableHibernateCache": true,
@@ -41,7 +41,9 @@
     "jwtSecretKey": "MDVlZDY0ZDQwNjEzZDYwMzRhOGFjNzI3OWQwMGNiMDQ0Y2JiMDU1MzM0ODE2MDlkZjZlMmI2Y2YwODExMWY3NDg4NWRlZWM4MjlhODUzYTA1NGE3Y2QzNDM3NTNkZTA0YWNmMjIzMTA2MmM2MDcxMDgxYjNiYWQxNTIxZmE4MTA=",
     "devServerPort": 4200,
     "clientPackageManager": "npm",
-    "languages": ["en"],
-    "enableGradleEnterprise": false
+    "languages": ["en", "fr"],
+    "enableGradleEnterprise": false,
+    "entities": ["CodeTables", "CodeValues", "MaprRequests"],
+    "lastLiquibaseTimestamp": 1635604312000
   }
 }

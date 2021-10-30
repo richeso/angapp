@@ -1,0 +1,31 @@
+{
+  "mgrwebApp": {
+    "maprRequests": {
+      "home": {
+        "title": "MaprRequests",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Mapr Requests",
+        "createOrEditLabel": "Créer ou éditer un Mapr Requests",
+        "notFound": "Aucun Mapr Requests trouvé"
+      },
+      "created": "Un nouveau Mapr Requests a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Mapr Requests avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Mapr Requests avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Mapr Requests {{ id }} ?"
+      },
+      "detail": {
+        "title": "Mapr Requests"
+      },
+      "id": "ID",
+      "type": "Type",
+      "action": "Action",
+      "name": "Name",
+      "path": "Path",
+      "requestUser": "Request User",
+      "requestDate": "Request Date",
+      "status": "Status",
+      "statusDate": "Status Date"
+    }
+  }
+}

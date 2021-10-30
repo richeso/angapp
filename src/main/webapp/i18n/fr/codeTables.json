@@ -1,0 +1,25 @@
+{
+  "mgrwebApp": {
+    "codeTables": {
+      "home": {
+        "title": "CodeTables",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Code Tables",
+        "createOrEditLabel": "Créer ou éditer un Code Tables",
+        "notFound": "Aucun Code Tables trouvé"
+      },
+      "created": "Un nouveau Code Tables a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Code Tables avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Code Tables avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Code Tables {{ id }} ?"
+      },
+      "detail": {
+        "title": "Code Tables"
+      },
+      "id": "ID",
+      "tableName": "Table Name",
+      "codeValues": "Code Values"
+    }
+  }
+}

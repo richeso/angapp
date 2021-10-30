@@ -1,0 +1,26 @@
+{
+  "mgrwebApp": {
+    "codeValues": {
+      "home": {
+        "title": "Code Values",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Code Values",
+        "createOrEditLabel": "Create or edit a Code Values",
+        "notFound": "No Code Values found"
+      },
+      "created": "A new Code Values is created with identifier {{ param }}",
+      "updated": "A Code Values is updated with identifier {{ param }}",
+      "deleted": "A Code Values is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Code Values {{ id }}?"
+      },
+      "detail": {
+        "title": "Code Values"
+      },
+      "id": "ID",
+      "key": "Key",
+      "value": "Value",
+      "codeTables": "Code Tables"
+    }
+  }
+}

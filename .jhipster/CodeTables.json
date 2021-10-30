@@ -1,0 +1,29 @@
+{
+  "name": "CodeTables",
+  "fields": [
+    {
+      "fieldName": "tableName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "3"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "codeValues",
+      "otherEntityRelationshipName": "codeTables",
+      "relationshipName": "codeValues"
+    }
+  ],
+  "entityTableName": "code_tables",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211030135940"
+}

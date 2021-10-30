@@ -1,6 +1,6 @@
 {
-  "name": "Angapp",
-  "short_name": "Angapp",
+  "name": "mgrweb",
+  "short_name": "mgrweb",
   "icons": [
     {
       "src": "./content/images/jhipster_family_member_1_head-192.png",

@@ -1,0 +1,12 @@
+
+entity CodeTables {
+     tableName String required minlength(3)
+}
+
+entity CodeValues {
+    key String required minlength(3),
+    value String
+}
+relationship ManyToOne {
+	CodeValues to CodeTables
+}

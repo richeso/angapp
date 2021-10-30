@@ -1,0 +1,10 @@
+entity MaprRequests {
+  type String required minlength(3)
+  action String required minlength(3)
+  name String required minlength(3)
+  path String required minlength(3)
+  requestUser String required minlength(3)
+  requestDate Instant required
+  status String required minlength(3)
+  statusDate Instant required 
+}

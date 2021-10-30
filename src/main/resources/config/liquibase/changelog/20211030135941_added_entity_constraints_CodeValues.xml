@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+    <!--
+        Added the constraints for entity CodeValues.
+    -->
+    <changeSet id="20211030135941-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="code_tables_id"
+                                 baseTableName="code_values"
+                                 constraintName="fk_code_values__code_tables_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="code_tables"/>
+    </changeSet>
+</databaseChangeLog>
